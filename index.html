@@ -1,0 +1,1010 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>第一次段考單字卡</title>
+<meta name="theme-color" content="#EEF1F4">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="第一次段考單字卡">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+@font-face{font-family:'Atkinson Hyperlegible';font-style:normal;font-weight:400;font-display:swap;src:url(atkinson-hyperlegible-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Atkinson Hyperlegible';font-style:normal;font-weight:700;font-display:swap;src:url(atkinson-hyperlegible-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url(noto-sans-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url(noto-sans-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url(noto-sans-greek-400-normal.woff2) format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}</style>
+<style>
+/* Layout: one-column phone app — sticky header, scrolling card, thumb-zone controls fixed at the bottom. */
+:root{
+  --bg:#EEF1F4; --card:#F8FAFB; --mist:#8A9FB3; --deep:#5F7487; --pale:#C5D1DB; --ink:#3B4754;
+  --ink-2:#55667A; --line:#DCE3E9; --chip:#E6EBF0; --on-deep:#FFFFFF;
+  --oat:#D8CFC4; --oat-soft:#F2EDE7; --oat-ink:#6B5E50;
+  --rose:#C4A6A1; --rose-soft:#F3E7E4; --rose-ink:#7D5A55;
+  --sage-soft:#E3ECE6; --sage-ink:#4A6352;
+  --hl:#E9E2D7; --shadow:0 1px 2px rgba(59,71,84,.06),0 6px 20px rgba(59,71,84,.07);
+  --f-en:"Atkinson Hyperlegible","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-zh:"PingFang TC","Noto Sans TC","Microsoft JhengHei","Heiti TC",sans-serif;
+  --f-ipa:"Noto Sans","Lucida Sans Unicode","Arial Unicode MS","Segoe UI",sans-serif;
+  --r-card:18px; --r-btn:14px; --bar-h:132px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#1B2229; --card:#242D36; --mist:#8FA6BA; --deep:#9DB3C6; --pale:#3A4856; --ink:#E3E9EE;
+  --ink-2:#AEBCC9; --line:#33404C; --chip:#2E3943; --on-deep:#14191E;
+  --oat:#8C8174; --oat-soft:#38332D; --oat-ink:#E2D8CC;
+  --rose:#B8968F; --rose-soft:#3C3130; --rose-ink:#EBCBC5;
+  --sage-soft:#2B3830; --sage-ink:#C3D8CA;
+  --hl:#3E4650; --shadow:0 1px 2px rgba(0,0,0,.25),0 6px 20px rgba(0,0,0,.25);
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#1B2229; --card:#242D36; --mist:#8FA6BA; --deep:#9DB3C6; --pale:#3A4856; --ink:#E3E9EE;
+  --ink-2:#AEBCC9; --line:#33404C; --chip:#2E3943; --on-deep:#14191E;
+  --oat:#8C8174; --oat-soft:#38332D; --oat-ink:#E2D8CC;
+  --rose:#B8968F; --rose-soft:#3C3130; --rose-ink:#EBCBC5;
+  --sage-soft:#2B3830; --sage-ink:#C3D8CA;
+  --hl:#3E4650; --shadow:0 1px 2px rgba(0,0,0,.25),0 6px 20px rgba(0,0,0,.25);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-en),var(--f-zh);font-size:16px;line-height:1.55;-webkit-text-size-adjust:100%;overflow-x:hidden}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:3px solid var(--mist);outline-offset:2px}
+.zh{font-family:var(--f-zh)}
+.en{font-family:var(--f-en)}
+.ipa{font-family:var(--f-ipa)}
+.wrap{max-width:640px;margin:0 auto;padding-inline:16px}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.top-row{display:flex;align-items:center;gap:8px;padding-block:10px 6px}
+.brand{font-family:var(--f-zh);font-weight:700;font-size:1.05rem;letter-spacing:.04em;color:var(--deep);flex:1;min-width:0;display:flex;align-items:center;gap:8px}
+.brand-dot{width:14px;height:14px;border-radius:4px;background:var(--mist);display:inline-block;flex:none}
+.icon-btn{width:42px;height:42px;border-radius:12px;border:1px solid var(--line);background:var(--card);display:grid;place-items:center;color:var(--deep)}
+.icon-btn svg{width:22px;height:22px}
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;background:var(--chip);border-radius:12px;padding:4px;margin-block:4px 10px}
+.tab{border:0;background:transparent;border-radius:9px;padding:8px 4px;font-family:var(--f-zh);font-size:.95rem;color:var(--ink-2);min-height:40px}
+.tab[aria-selected="true"]{background:var(--card);color:var(--ink);font-weight:700;box-shadow:0 1px 2px rgba(59,71,84,.08)}
+
+/* filter summary */
+.meta-row{display:flex;align-items:center;gap:8px;padding-block:10px 4px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 12px;font-family:var(--f-zh);font-size:.85rem;color:var(--ink);min-height:36px;max-width:100%}
+.pill svg{width:16px;height:16px;flex:none;color:var(--deep)}
+.pill span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.count{margin-left:auto;font-family:var(--f-zh);font-size:.9rem;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:nowrap}
+.count b{color:var(--ink);font-size:1.05rem}
+.bar{height:4px;background:var(--chip);border-radius:4px;overflow:hidden;margin-block:4px 12px}
+.bar i{display:block;height:100%;background:var(--mist);width:0;transition:width .25s}
+
+/* card */
+main{padding-bottom:calc(var(--bar-h) + 24px + env(safe-area-inset-bottom,0px))}
+.card{background:var(--card);border-radius:var(--r-card);box-shadow:var(--shadow);padding:18px 18px 8px;border:1px solid var(--line)}
+.srcs{display:flex;flex-wrap:wrap;gap:6px}
+.src{font-family:var(--f-zh);font-size:.78rem;line-height:1.35;padding:4px 9px;border-radius:8px;background:var(--chip);color:var(--ink-2)}
+.src[data-k="T"]{background:var(--oat-soft);color:var(--oat-ink)}
+.src[data-k="M"]{background:var(--chip);color:var(--ink-2)}
+.src[data-k="C"]{background:var(--sage-soft);color:var(--sage-ink)}
+.word-row{display:flex;align-items:flex-start;gap:10px;margin-top:14px}
+.word{font-family:var(--f-en);font-weight:700;font-size:clamp(2.1rem,9vw,3rem);line-height:1.12;letter-spacing:.01em;word-break:break-word;flex:1;min-width:0;color:var(--ink)}
+.state{font-family:var(--f-zh);font-size:.78rem;padding:4px 10px;border-radius:999px;white-space:nowrap;margin-top:8px}
+.state.k{background:var(--sage-soft);color:var(--sage-ink)}
+.state.r{background:var(--rose-soft);color:var(--rose-ink)}
+.phon{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:6px;color:var(--ink-2);font-size:1.05rem}
+.phon .lab{font-family:var(--f-en);font-size:.72rem;letter-spacing:.08em;color:var(--mist);margin-right:4px;font-weight:700}
+.poses{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.posb{font-family:var(--f-en);font-size:.8rem;font-weight:700;color:var(--deep);border:1px solid var(--pale);border-radius:6px;padding:1px 7px}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{border:1px solid transparent;border-radius:var(--r-btn);padding:10px 16px;min-height:46px;font-family:var(--f-zh);font-size:1rem;display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--chip);color:var(--ink)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn.primary{background:var(--deep);color:var(--on-deep);font-weight:700}
+.btn.soft{background:var(--pale);color:var(--ink)}
+.btn.ghost{background:transparent;border-color:var(--line)}
+.btn.rose{background:var(--rose-soft);color:var(--rose-ink);border-color:transparent}
+.btn.sage{background:var(--sage-soft);color:var(--sage-ink)}
+.btn[aria-pressed="true"].rose{background:var(--rose);color:#2E2523}
+.btn[aria-pressed="true"].sage{background:var(--sage-ink);color:var(--card)}
+.btn:disabled{opacity:.45}
+.seg{display:inline-flex;background:var(--chip);border-radius:12px;padding:3px;gap:2px}
+.seg button{border:0;background:transparent;border-radius:9px;padding:6px 12px;min-height:40px;font-family:var(--f-zh);font-size:.9rem;color:var(--ink-2)}
+.seg button[aria-pressed="true"]{background:var(--card);color:var(--ink);font-weight:700}
+.sec{border-top:1px solid var(--line);margin-top:16px;padding-top:14px}
+.sec h3{margin:0 0 8px;font-family:var(--f-zh);font-size:.8rem;letter-spacing:.12em;color:var(--mist);font-weight:700}
+.senses{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.senses li{display:flex;gap:10px;align-items:baseline}
+.senses .p{font-family:var(--f-en);font-weight:700;color:var(--deep);font-size:.9rem;min-width:3.2em;flex:none}
+.senses .z{font-family:var(--f-zh);font-size:1.12rem;line-height:1.5;flex:1;min-width:0}
+.senses .g{font-family:var(--f-en);font-size:.78rem;color:var(--ink-2);margin-left:4px}
+.tag{font-family:var(--f-zh);font-size:.68rem;color:var(--ink-2);background:var(--chip);border-radius:5px;padding:1px 6px;margin-left:6px;white-space:nowrap;vertical-align:2px}
+.veil{display:block;width:100%;text-align:left;border:1px dashed var(--pale);background:repeating-linear-gradient(135deg,var(--chip),var(--chip) 8px,transparent 8px,transparent 16px);border-radius:12px;padding:12px 14px;color:var(--ink-2);font-family:var(--f-zh);font-size:.95rem}
+.ex{display:grid;gap:4px}
+.ex .e{font-family:var(--f-en);font-size:1.08rem;line-height:1.55}
+.ex .e mark{background:var(--hl);color:inherit;border-radius:4px;padding:0 2px;font-weight:700}
+.ex .z{font-family:var(--f-zh);color:var(--ink-2);font-size:.95rem}
+.ex .from{font-family:var(--f-zh);font-size:.72rem;color:var(--mist)}
+.ex + .ex{margin-top:12px;padding-top:12px;border-top:1px dashed var(--line)}
+.more{border:0;background:none;color:var(--deep);font-family:var(--f-zh);font-size:.9rem;padding:8px 0;min-height:40px;text-decoration:underline;text-underline-offset:3px}
+.cols{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.cols li{display:flex;flex-wrap:wrap;gap:2px 10px;align-items:baseline}
+.cols .e{font-family:var(--f-en);font-weight:700;font-size:1rem}
+.cols .z{font-family:var(--f-zh);color:var(--ink-2);font-size:.92rem}
+.forms{font-family:var(--f-en),var(--f-zh);font-size:.98rem;line-height:1.6}
+.morph{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.mp{display:inline-flex;flex-direction:column;align-items:flex-start;background:var(--oat-soft);color:var(--oat-ink);border-radius:10px;padding:5px 10px;line-height:1.25}
+.mp b{font-family:var(--f-en);font-size:1.02rem}
+.mp small{font-family:var(--f-zh);font-size:.75rem}
+.mp i{font-style:normal;font-family:var(--f-zh);font-size:.66rem;opacity:.8}
+.plus{color:var(--mist);font-weight:700}
+.fam{margin-top:10px;display:grid;gap:8px}
+.fam .fr{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.fam .fl{font-family:var(--f-zh);font-size:.78rem;color:var(--ink-2);margin-right:2px}
+.wchip{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:5px 12px;min-height:36px;font-family:var(--f-en);font-size:.95rem;color:var(--deep)}
+.rel{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.rel li{font-family:var(--f-en),var(--f-zh);font-size:.92rem;line-height:1.5;display:flex;gap:8px}
+.rel .rk{flex:none;font-family:var(--f-zh);font-size:.72rem;background:var(--chip);border-radius:5px;padding:1px 6px;height:fit-content;margin-top:3px;color:var(--ink-2)}
+.topics{display:flex;flex-wrap:wrap;gap:6px}
+.topics span{font-family:var(--f-zh);font-size:.8rem;border-radius:999px;padding:3px 10px;background:var(--chip);color:var(--ink-2)}
+.verify{font-family:var(--f-zh);font-size:.85rem;color:var(--ink-2);line-height:1.6}
+.verify .ok{color:var(--sage-ink)}
+.verify .warn{color:var(--rose-ink)}
+.links{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.links a{font-family:var(--f-zh);font-size:.85rem;color:var(--deep);border:1px solid var(--line);border-radius:10px;padding:6px 10px;text-decoration:none;min-height:36px;display:inline-flex;align-items:center}
+details.fold summary{cursor:pointer;font-family:var(--f-zh);font-size:.8rem;letter-spacing:.12em;color:var(--mist);font-weight:700;list-style:none;padding-block:4px;min-height:32px}
+details.fold summary::-webkit-details-marker{display:none}
+details.fold summary::after{content:"＋";float:right;color:var(--mist)}
+details.fold[open] summary::after{content:"－"}
+
+/* bottom bar */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--bg);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+.dock .wrap{display:grid;gap:8px;padding-block:10px}
+.dock-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.dock .btn{width:100%;min-height:50px;padding-inline:8px;white-space:nowrap}
+.dock .big{min-height:56px;font-size:1.05rem}
+
+/* notices */
+.notice{background:var(--rose-soft);color:var(--rose-ink);border-radius:14px;padding:12px 14px;font-family:var(--f-zh);font-size:.92rem;line-height:1.6;margin-bottom:12px}
+.notice a{color:inherit;font-weight:700}
+.notice .x{float:right;border:0;background:none;color:inherit;font-size:1.1rem;min-width:36px;min-height:32px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(var(--bar-h) + 24px + env(safe-area-inset-bottom,0px));z-index:60;background:var(--ink);color:var(--bg);font-family:var(--f-zh);padding:10px 16px;border-radius:12px;font-size:.92rem;max-width:calc(100% - 32px);box-shadow:var(--shadow)}
+
+/* sheets */
+.sheet-bg{position:fixed;inset:0;background:rgba(27,34,41,.42);z-index:70;display:flex;align-items:flex-end;justify-content:center}
+.sheet{background:var(--bg);width:100%;max-width:640px;max-height:92%;border-radius:20px 20px 0 0;display:flex;flex-direction:column;padding-bottom:env(safe-area-inset-bottom,0px)}
+.sheet-h{display:flex;align-items:center;gap:8px;padding:12px 16px;border-bottom:1px solid var(--line)}
+.sheet-h h2{margin:0;flex:1;font-family:var(--f-zh);font-size:1.05rem}
+.sheet-b{overflow:auto;padding:14px 16px 18px;-webkit-overflow-scrolling:touch}
+.sheet-f{padding:10px 16px;border-top:1px solid var(--line);display:flex;gap:8px}
+.sheet-f .btn{flex:1}
+.fgroup{margin-bottom:16px}
+.fgroup h4{margin:0 0 8px;font-family:var(--f-zh);font-size:.85rem;color:var(--ink-2);font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 13px;min-height:38px;font-family:var(--f-zh);font-size:.9rem;color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--deep);border-color:var(--deep);color:var(--on-deep);font-weight:700}
+.sub{margin-top:8px;padding:10px;border-radius:12px;background:var(--card);border:1px solid var(--line)}
+.hint{font-family:var(--f-zh);font-size:.82rem;color:var(--ink-2);line-height:1.6}
+.search-in{width:100%;border:1px solid var(--pale);background:var(--card);border-radius:12px;padding:12px 14px;font-size:1.05rem;min-height:48px}
+.results{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:6px}
+.results button{width:100%;text-align:left;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:10px 12px;display:grid;gap:2px}
+.results .rw{font-family:var(--f-en);font-weight:700;font-size:1.05rem}
+.results .rz{font-family:var(--f-zh);font-size:.88rem;color:var(--ink-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.set-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-block:10px;border-bottom:1px solid var(--line)}
+.set-row:last-child{border-bottom:0}
+.set-row .l{font-family:var(--f-zh);font-size:.95rem;flex:1;min-width:10em}
+.set-row .l small{display:block;color:var(--ink-2);font-size:.78rem}
+select{border:1px solid var(--pale);background:var(--card);border-radius:10px;padding:8px 10px;min-height:42px;max-width:100%}
+textarea{width:100%;min-height:110px;border:1px solid var(--pale);background:var(--card);border-radius:12px;padding:10px;font-family:ui-monospace,Menlo,monospace;font-size:.8rem}
+
+/* panels: review / quiz / done */
+.panel{background:var(--card);border-radius:var(--r-card);box-shadow:var(--shadow);padding:20px 18px;border:1px solid var(--line)}
+.panel h2{margin:0 0 6px;font-family:var(--f-zh);font-size:1.3rem;text-wrap:balance}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0}
+.stat{background:var(--bg);border-radius:12px;padding:10px;text-align:center}
+.stat b{display:block;font-size:1.5rem;font-variant-numeric:tabular-nums;color:var(--deep)}
+.stat span{font-family:var(--f-zh);font-size:.78rem;color:var(--ink-2)}
+.stack{display:grid;gap:10px}
+.qprompt{text-align:center;padding-block:10px 4px}
+.qprompt .word{font-size:clamp(2rem,9vw,2.8rem)}
+.qprompt .zhq{font-family:var(--f-zh);font-size:1.25rem;line-height:1.6}
+.qprompt .cloze{font-family:var(--f-en);font-size:1.12rem;line-height:1.7;text-align:left}
+.qprompt .cloze .blank{display:inline-block;min-width:5em;border-bottom:2px solid var(--deep);color:var(--deep);font-weight:700;text-align:center}
+.opts{display:grid;gap:8px;margin-top:14px}
+.opt{border:1.5px solid var(--line);background:var(--bg);border-radius:14px;padding:12px 14px;min-height:54px;text-align:left;font-size:1.02rem;line-height:1.45}
+.opt.zh{font-family:var(--f-zh)}
+.opt.right{border-color:var(--sage-ink);background:var(--sage-soft);color:var(--sage-ink);font-weight:700}
+.opt.wrong{border-color:var(--rose);background:var(--rose-soft);color:var(--rose-ink)}
+.spell{width:100%;border:1.5px solid var(--pale);background:var(--bg);border-radius:14px;padding:14px;font-family:var(--f-en);font-size:1.3rem;text-align:center;min-height:56px;letter-spacing:.03em}
+.spell.right{border-color:var(--sage-ink)}
+.spell.wrong{border-color:var(--rose)}
+.fb{border-radius:14px;padding:12px 14px;font-family:var(--f-zh);line-height:1.6}
+.fb.right{background:var(--sage-soft);color:var(--sage-ink)}
+.fb.wrong{background:var(--rose-soft);color:var(--rose-ink)}
+.fb .fw{font-family:var(--f-en);font-weight:700;font-size:1.15rem}
+.qhead{display:flex;justify-content:space-between;font-family:var(--f-zh);font-size:.9rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.wronglist{display:flex;flex-wrap:wrap;gap:6px}
+.loading{padding:40px 0;text-align:center;font-family:var(--f-zh);color:var(--ink-2)}
+.big-done{font-family:var(--f-zh);font-size:2.2rem;line-height:1;color:var(--mist);margin-bottom:6px}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+@media (min-width:700px){.word{font-size:3.2rem}}
+@media (max-width:390px){.dock .btn{font-size:.92rem;padding-inline:4px;gap:4px}.dock .dock-row:first-child .btn svg{display:none}.dock .big{font-size:1rem}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="top-row">
+      <div class="brand"><span class="brand-dot" aria-hidden="true"></span><span>第一次段考單字卡</span></div>
+      <button class="icon-btn" id="btnSearch" aria-label="搜尋單字"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button>
+      <button class="icon-btn" id="btnFilter" aria-label="篩選與順序"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M7 12h10M10 18h4"/></svg></button>
+      <button class="icon-btn" id="btnSettings" aria-label="設定"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2.5 12h3M18.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></button>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" id="tab-cards" data-tab="cards" aria-selected="true">單字卡</button>
+      <button class="tab" role="tab" id="tab-today" data-tab="today" aria-selected="false">今日複習</button>
+      <button class="tab" role="tab" id="tab-quiz" data-tab="quiz" aria-selected="false">小測驗</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+  <div class="loading" id="loading">正在載入單字資料…</div>
+</main>
+
+<nav class="dock" id="dock" hidden></nav>
+
+<script>
+"use strict";
+/* ================= utilities ================= */
+const $ = (s, r = document) => r.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const h = (strings, ...vals) => strings.reduce((a, s, i) => a + s + (i < vals.length ? vals[i] : ""), "");
+const today = () => { const d = new Date(); return d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0") + "-" + String(d.getDate()).padStart(2,"0"); };
+const addDays = (ds, n) => { const [y,m,d] = ds.split("-").map(Number); const t = new Date(y, m-1, d + n); return t.getFullYear() + "-" + String(t.getMonth()+1).padStart(2,"0") + "-" + String(t.getDate()).padStart(2,"0"); };
+function rng(seed){ let a = seed >>> 0; return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+function shuffle(arr, rand = Math.random){ const a = arr.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rand() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+const ICON = {
+  play:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>',
+  prev:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>',
+  next:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>',
+  eye:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>',
+  eyeoff:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 3l18 18M10.6 5.1A10 10 0 0 1 12 5c6.4 0 10 7 10 7a17 17 0 0 1-3.2 4M6.6 6.6C3.8 8.4 2 12 2 12s3.6 7 10 7a9.6 9.6 0 0 0 5.4-1.6M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>',
+  check:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
+  again:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.5-5.8M4 4v4h4"/></svg>',
+  filter:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M7 12h10M10 18h4"/></svg>',
+  close:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>'
+};
+
+/* ================= data ================= */
+let DATA = null, WORDS = [], BYID = {}, MORPH = {};
+const TOPICS = ["校園學習","旅遊交通","科技網路","情緒感受","環境自然","動物生物","人際關係","工作職場","藝文娛樂","健康身體","社會政治","商業經濟","生活居家","飲食","運動休閒","法律犯罪","溝通表達","思考認知","描述評價","時間數量"];
+const POSES = [["n","名詞"],["v","動詞"],["adj","形容詞"],["adv","副詞"],["phr","片語"],["prep","介系詞"],["conj","連接詞"]];
+const RELNAME = {"衍":"衍生","似":"同義","反":"反義","片":"片語","用":"用法","延":"延伸","註":"註","三":"三態","補":"補充","比":"易混淆"};
+const SRCNAME = {T:"課本", M:"雜誌", C:"核心"};
+function codeName(c){ const k = c[0], n = c.slice(1); return k === "T" ? "課本 L" + n : k === "M" ? "雜誌 U" + n : "核心 U" + n.padStart(2,"0"); }
+
+/* ================= state & persistence ================= */
+const LS_KEY = "mistvocab.v1";
+const DEFAULT_SETTINGS = { accent:"en-US", voiceUS:"", voiceGB:"", slow:false, showIPA:true, theme:"system", newPerDay:10, autoplay:false, hideZh:false };
+const DEFAULT_FILTER = { src:"all", T:[], M:[], C:[], pos:[], topics:[], mark:"all", order:"orig", seed:1 };
+let S = { v:1, updated:0, marks:{}, mt:{}, srs:{}, pos:{}, filter:{...DEFAULT_FILTER}, settings:{...DEFAULT_SETTINGS}, tab:"cards", today:null };
+function loadLocal(){
+  try { const raw = localStorage.getItem(LS_KEY); if (raw) { const o = JSON.parse(raw); if (o && o.v === 1) return o; } } catch (e) {}
+  return null;
+}
+function normalizeState(o){
+  const s = Object.assign({ v:1, updated:0, marks:{}, mt:{}, srs:{}, pos:{}, tab:"cards", today:null }, o || {});
+  s.filter = Object.assign({}, DEFAULT_FILTER, s.filter || {});
+  s.settings = Object.assign({}, DEFAULT_SETTINGS, s.settings || {});
+  return s;
+}
+let saveTimer = null;
+function save(){
+  S.updated = Date.now();
+  try { localStorage.setItem(LS_KEY, JSON.stringify(S)); } catch (e) {}
+  Cloud.schedule();
+}
+function mergeStates(a, b){ // per-record merge; newer wins
+  const out = normalizeState(a.updated >= b.updated ? a : b);
+  const other = a.updated >= b.updated ? b : a;
+  for (const id of new Set([...Object.keys(a.mt||{}), ...Object.keys(b.mt||{})])) {
+    const ta = (a.mt||{})[id] || 0, tb = (b.mt||{})[id] || 0;
+    const src = ta >= tb ? a : b;
+    out.mt[id] = Math.max(ta, tb);
+    if ((src.marks||{})[id]) out.marks[id] = src.marks[id]; else delete out.marks[id];
+  }
+  for (const id of new Set([...Object.keys(a.srs||{}), ...Object.keys(b.srs||{})])) {
+    const ra = (a.srs||{})[id], rb = (b.srs||{})[id];
+    out.srs[id] = !ra ? rb : !rb ? ra : ((ra.t||0) >= (rb.t||0) ? ra : rb);
+  }
+  out.pos = Object.assign({}, other.pos || {}, out.pos || {});
+  const wiped = Math.max(a.wipedAt || 0, b.wipedAt || 0);
+  if (wiped) {
+    out.wipedAt = wiped;
+    for (const id of Object.keys(out.srs)) if (!out.srs[id] || (out.srs[id].t || 0) <= wiped) delete out.srs[id];
+    for (const id of Object.keys(out.marks)) if ((out.mt[id] || 0) <= wiped) delete out.marks[id];
+  }
+  return out;
+}
+
+/* cloud sync through the artifact's private per-person store (falls back to this device only) */
+const Cloud = {
+  db:null, ref:null, status:"local", timer:null, writing:false, dirty:false,
+  async init(){
+    try {
+      if (!window.claude || !window.claude.use) return;
+      const [db, user] = await Promise.all([window.claude.use("db"), window.claude.use("user")]);
+      if (!db || !user) return;
+      const uid = await user.id(); if (!uid) return;
+      this.db = db; this.ref = db.doc("data/users/" + uid + "/progress");
+      await this.pull();
+      document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && !this.dirty) this.pull(); });
+    } catch (e) { this.status = "local"; }
+  },
+  async pull(){
+    if (!this.ref) return;
+    try {
+      const snap = await this.ref.get();
+      this.status = "cloud";
+      if (snap.exists) {
+        const remote = snap.data() && snap.data().state ? JSON.parse(snap.data().state) : null;
+        if (remote && remote.v === 1) {
+          const before = JSON.stringify(S);
+          S = mergeStates(S, normalizeState(remote));
+          try { localStorage.setItem(LS_KEY, JSON.stringify(S)); } catch (e) {}
+          if (JSON.stringify(S) !== before) { applyTheme(); rerender(); }
+        }
+      } else { this.schedule(); }
+    } catch (e) { this.status = "error"; }
+  },
+  schedule(){
+    if (!this.ref) return;
+    this.dirty = true; clearTimeout(this.timer);
+    this.timer = setTimeout(() => this.push(), 2500);
+  },
+  async push(){
+    if (!this.ref) return;
+    if (this.writing) { this.schedule(); return; }
+    this.writing = true; this.dirty = false;
+    try { await this.ref.set({ state: JSON.stringify(S), at: Date.now() }); this.status = "cloud"; }
+    catch (e) { this.status = "error"; }
+    this.writing = false;
+  }
+};
+
+/* ================= speech ================= */
+const TTS = {
+  ok: "speechSynthesis" in window && "SpeechSynthesisUtterance" in window,
+  voices: [], loaded:false, token:0, speakingId:null,
+  init(){
+    if (!this.ok) { this.loaded = true; return; }
+    const load = () => {
+      const v = speechSynthesis.getVoices() || [];
+      if (v.length) { this.voices = v; this.loaded = true; renderVoiceNotice(); }
+    };
+    load();
+    try { speechSynthesis.addEventListener("voiceschanged", load); } catch (e) { speechSynthesis.onvoiceschanged = load; }
+    setTimeout(() => { load(); this.loaded = true; renderVoiceNotice(); }, 1800);
+  },
+  lang(v){ return String(v.lang || "").replace("_","-").toLowerCase(); },
+  english(){ return this.voices.filter(v => this.lang(v).startsWith("en")); },
+  forAccent(acc){ const a = acc.toLowerCase(); return this.voices.filter(v => this.lang(v) === a || this.lang(v).startsWith(a + "-")); },
+  pick(){
+    const acc = S.settings.accent; const chosen = acc === "en-GB" ? S.settings.voiceGB : S.settings.voiceUS;
+    let list = this.forAccent(acc);
+    if (navigator.onLine === false) { const loc = list.filter(v => v.localService); if (loc.length) list = loc; }
+    if (chosen) { const c = list.find(v => v.voiceURI === chosen); if (c) return { voice:c, fallback:false }; }
+    const pref = acc === "en-GB" ? [/daniel/i,/serena/i,/kate/i,/google uk english/i,/arthur/i,/martha/i] : [/samantha/i,/google us english/i,/ava/i,/allison/i,/alex/i,/aaron/i,/nicky/i];
+    const score = v => { let s = 0; pref.forEach((r,i) => { if (r.test(v.name)) s = Math.max(s, 20 - i); }); if (v.localService) s += 2; if (/novelty|whisper|bad news|bells|boing|bubbles|cellos|jester|organ|superstar|trinoids|zarvox|albert|bahh|fred|junior|ralph|kathy|grandma|grandpa|eddy|flo|reed|rocko|sandy|shelley/i.test(v.name)) s -= 30; return s; };
+    list = list.slice().sort((a,b) => score(b) - score(a));
+    if (list.length) return { voice:list[0], fallback:false };
+    const any = this.english().sort((a,b) => score(b) - score(a));
+    if (any.length) return { voice:any[0], fallback:true };
+    return null;
+  },
+  available(){ return this.ok && this.english().length > 0; },
+  stop(){ this.token++; this.speakingId = null; if (this.ok) try { speechSynthesis.cancel(); } catch (e) {} },
+  speak(text, opts = {}){
+    if (!this.ok) { showVoiceProblem(); return false; }
+    const p = this.pick();
+    if (!p) { showVoiceProblem(); return false; }
+    const my = ++this.token;
+    const u = new SpeechSynthesisUtterance(text);
+    u.voice = p.voice; u.lang = p.voice.lang; u.rate = (opts.slow ?? S.settings.slow) ? 0.6 : 0.95; u.pitch = 1;
+    u.onend = u.onerror = () => { if (this.token === my) this.speakingId = null; };
+    this.speakingId = opts.id || null;
+    const busy = speechSynthesis.speaking || speechSynthesis.pending;
+    if (busy) { speechSynthesis.cancel(); setTimeout(() => { if (this.token === my) speechSynthesis.speak(u); }, 80); }
+    else speechSynthesis.speak(u);
+    if (p.fallback && !this._warned) { this._warned = true; toast(S.settings.accent === "en-GB" ? "這台裝置沒有英式語音，暫時改用其他英語語音。" : "這台裝置沒有美式語音，暫時改用其他英語語音。"); }
+    return true;
+  }
+};
+function speakWord(w, slow){ return TTS.speak(w.w.replace(/…|\.\.\./g, " ").replace(/\(|\)/g, ""), { slow, id:w.id }); }
+function speakExample(w){ const e = (w.ex || [])[0]; if (!e) { toast("這個字沒有例句。"); return; } TTS.speak(e.e, { id:w.id }); }
+
+/* ================= derived lists ================= */
+function filterSig(f){ return JSON.stringify([f.src, f.T, f.M, f.C, f.pos, f.topics, f.mark, f.order, f.order === "rand" ? f.seed : 0]); }
+function matchSource(w, f){
+  if (f.src === "all") return true;
+  if (f.src === "multi") return w.sk.length >= 2;
+  if (!w.sk.includes(f.src)) return false;
+  const sel = f[f.src] || [];
+  if (!sel.length) return true;
+  return w.sc.some(c => c[0] === f.src && sel.includes(Number(c.slice(1))));
+}
+function listFor(f, ignoreMark){
+  let arr = WORDS.filter(w => matchSource(w, f)
+    && (!f.pos.length || f.pos.some(p => w.pos.includes(p)))
+    && (!f.topics.length || f.topics.some(t => w.tp.includes(t)))
+    && (ignoreMark || f.mark === "all" || (f.mark === "none" ? !S.marks[w.id] : S.marks[w.id] === f.mark)));
+  if (f.src === "T" || f.src === "M" || f.src === "C") arr.sort((a,b) => (a.ord[f.src]||1e9) - (b.ord[f.src]||1e9));
+  if (f.order === "rand") arr = shuffle(arr, rng(f.seed));
+  return arr;
+}
+let LIST = [];
+function rebuildList(){ LIST = listFor(S.filter); }
+function curIndex(){ const i = S.pos[filterSig(S.filter)] || 0; return Math.min(Math.max(i, 0), LIST.length); }
+function setIndex(i){ S.pos[filterSig(S.filter)] = i; save(); }
+function filterSummary(f){
+  let s = f.src === "all" ? "全部來源" : f.src === "multi" ? "多個來源都有" : SRCNAME[f.src];
+  const sel = f[f.src] || [];
+  if ((f.src === "T" || f.src === "M" || f.src === "C") && sel.length) s += " " + sel.map(n => f.src === "T" ? "L" + n : f.src === "M" ? "U" + n : "U" + String(n).padStart(2,"0")).join("、");
+  if (f.pos.length) s += "・" + f.pos.map(p => (POSES.find(x => x[0] === p)||[,p])[1]).join("/");
+  if (f.topics.length) s += "・" + f.topics.join("/");
+  if (f.mark === "r") s += "・只看再複習"; else if (f.mark === "k") s += "・只看已熟悉"; else if (f.mark === "none") s += "・未標記";
+  s += f.order === "rand" ? "・隨機" : "・原始順序";
+  return s;
+}
+
+/* ================= rendering: card ================= */
+function hlSentence(text, forms){
+  let out = esc(text);
+  for (const f of forms || []) {
+    if (!f || f.length < 2) continue;
+    const re = new RegExp("(^|[^A-Za-z])(" + f.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")(?![A-Za-z])", "i");
+    if (re.test(out)) { out = out.replace(re, "$1<mark>$2</mark>"); break; }
+  }
+  return out;
+}
+function morphKey(m){ let k = m[0] + ":" + m[1].toLowerCase(); if (m[0] === "pre" && /^不/.test(m[2])) k += "#neg"; if (/contra/.test(m[2])) k += "#contra"; return k; }
+function srcTagHTML(codes){ return (codes||[]).map(c => `<span class="tag">${esc(codeName(c))}</span>`).join(""); }
+function cardHTML(w, opt = {}){
+  const hide = opt.hideZh && !opt.revealed;
+  const mark = S.marks[w.id];
+  const phon = (w.kk||[]).length ? `<div class="phon">${w.kk.map((k,i) => `<span><span class="lab">KK</span><span class="ipa">[${esc(k)}]</span></span>`).join("")}${S.settings.showIPA ? w.ipa.map(k => `<span><span class="lab">IPA</span><span class="ipa">/${esc(k)}/</span></span>`).join("") : ""}</div>` : `<div class="phon"><span class="hint">片語：請播放發音聆聽</span></div>`;
+  const senses = hide ? `<button class="veil" data-act="reveal">中文已隱藏・點一下顯示（${w.s.length} 個意思）</button>` :
+    `<ul class="senses">${w.s.map(s => `<li><span class="p">${esc(s.p)}</span><span class="z">${esc(s.z)}${s.g ? `<span class="g">${esc(s.g)}</span>` : ""}${srcTagHTML(s.src)}</span></li>`).join("")}</ul>`;
+  const exs = w.ex || [];
+  const exItem = (e) => `<div class="ex"><div class="e">${hlSentence(e.e, w.hl)}</div>${hide ? "" : (e.z ? `<div class="z">${esc(e.z)}</div>` : "")}<div class="from">${e.kind === "mag" ? "雜誌例句（單字頁）" : e.kind === "gen" ? "補充例句（常見用法）" : (e.src && e.src[0] === "T" ? "課本例句" : "核心單字例句")}${e.src ? "・" + esc(codeName(e.src)) : ""}</div></div>`;
+  const exHTML = exs.length ? exItem(exs[0]) + (exs.length > 1 ? (opt.allEx ? exs.slice(1).map(exItem).join("") : `<button class="more" data-act="allex">顯示更多例句（${exs.length - 1}）</button>`) : "") : `<div class="hint">（尚無例句）</div>`;
+  const cols = (w.col||[]).length ? `<div class="sec"><h3>常見搭配</h3><ul class="cols">${w.col.map(c => `<li><span class="e">${esc(c[0])}</span>${hide ? "" : `<span class="z">${esc(c[1])}</span>`}</li>`).join("")}</ul></div>` : "";
+  const forms = w.fm ? `<div class="sec"><h3>詞形變化</h3><div class="forms">${esc(w.fm).replace(/ ｜ /g, "<br>")}</div></div>` : "";
+  let morph = "";
+  if ((w.mo||[]).length) {
+    const parts = w.mo.map(m => `<span class="mp"><i>${m[0] === "pre" ? "字首" : m[0] === "suf" ? "字尾" : "字根"}</i><b>${esc(m[1])}</b><small>${esc(m[2])}</small></span>`).join('<span class="plus">＋</span>');
+    const fam = w.mo.map(m => {
+      const ids = (MORPH[morphKey(m)] || []).filter(id => id !== w.id);
+      if (!ids.length) return "";
+      const show = ids.slice(0, 14);
+      return `<div class="fr"><span class="fl">同${m[0] === "pre" ? "字首" : m[0] === "suf" ? "字尾" : "字根"} ${esc(m[1])}：</span>${show.map(id => `<button class="wchip" data-act="peek" data-id="${id}">${esc(BYID[id].w)}</button>`).join("")}${ids.length > show.length ? `<span class="hint">…等 ${ids.length} 字</span>` : ""}</div>`;
+    }).join("");
+    morph = `<div class="sec"><h3>字根・字首・字尾</h3><div class="morph">${parts}</div>${fam ? `<div class="fam">${fam}</div>` : `<div class="hint" style="margin-top:8px">目前資料中沒有其他同字根的字。</div>`}</div>`;
+  }
+  const rel = (w.rel||[]).length ? `<details class="fold sec"${opt.openRel ? " open" : ""}><summary>書上補充（${w.rel.length}）</summary><ul class="rel">${w.rel.map(r => `<li><span class="rk">${esc(RELNAME[r[0]] || r[0])}</span><span>${esc(r[1])}<span class="tag">${esc(codeName(r[2]))}</span></span></li>`).join("")}</ul></details>` : "";
+  const topics = (w.tp||[]).length ? `<div class="sec"><h3>主題</h3><div class="topics">${w.tp.map(t => `<span>${esc(t)}</span>`).join("")}</div></div>` : "";
+  let ver = "";
+  if (w.pr) {
+    if (w.pr.st === "ok") ver = `<span class="ok">✓ 音標已與 CMU 美式發音辭典比對一致。</span>`;
+    else if (w.pr.st === "mw") ver = `<span class="ok">✓ 已人工查證：</span>${esc(w.pr.note)}`;
+    else if (w.pr.st === "nodict") ver = `<span class="warn">待確認：</span>此字不在 CMU 發音辭典中，音標沿用教材，請以詞典連結核對。`;
+    else ver = `<span class="warn">待確認：</span>教材音標與 CMU 辭典（${esc(w.pr.cmu || "")}）不同，請以詞典連結核對。`;
+  } else ver = `片語未逐字比對音標，請以詞典連結核對。`;
+  if (w.q) ver += `<br><span class="warn">待確認：</span>${esc(w.q)}`;
+  const verify = `<div class="sec"><h3>查證</h3><div class="verify">中文意思來自教材原文；${ver}</div><div class="links"><a href="${w.lk.cam}" target="_blank" rel="noopener">劍橋英漢詞典</a><a href="${w.lk.oxf}" target="_blank" rel="noopener">Oxford Learner's</a><a href="${w.lk.mw}" target="_blank" rel="noopener">Merriam-Webster</a><a href="${w.lk.yh}" target="_blank" rel="noopener">Yahoo 奇摩字典</a></div></div>`;
+  return h`<article class="card" data-id="${w.id}">
+    <div class="srcs">${w.src.map(s => `<span class="src" data-k="${s.k}">${esc(s.full)}</span>`).join("")}</div>
+    <div class="word-row"><div class="word" lang="en">${esc(w.w)}</div>${mark ? `<span class="state ${mark}">${mark === "k" ? "已熟悉" : "再複習"}</span>` : ""}</div>
+    ${phon}
+    <div class="poses">${[...new Set(w.s.map(s => s.p))].map(p => `<span class="posb">${esc(p)}</span>`).join("")}</div>
+    <div class="acts">
+      <button class="btn primary" data-act="say">${ICON.play}播放發音</button>
+      <button class="btn soft" data-act="sayex">${ICON.play}播放例句</button>
+      <div class="seg" role="group" aria-label="語速"><button data-act="rate" data-v="0" aria-pressed="${!S.settings.slow}">正常</button><button data-act="rate" data-v="1" aria-pressed="${S.settings.slow}">慢速</button></div>
+    </div>
+    <div class="sec"><h3>中文意思</h3>${senses}${w.nt && !hide ? `<p class="hint" style="margin:8px 0 0">注意：${esc(w.nt)}</p>` : ""}</div>
+    <div class="sec"><h3>例句</h3>${exHTML}</div>
+    ${cols}${forms}${morph}${rel}${topics}${verify}
+  </article>`;
+}
+
+/* ================= views ================= */
+const main = $("#main"), dock = $("#dock");
+let view = { revealed:false, allEx:false };
+function setTab(t){
+  S.tab = t; save();
+  document.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-selected", String(b.dataset.tab === t)));
+  TTS.stop(); rerender(); window.scrollTo(0, 0);
+}
+function rerender(){
+  if (!DATA) return;
+  rebuildList();
+  if (S.tab === "today") renderToday(); else if (S.tab === "quiz") renderQuiz(); else renderCards();
+}
+
+function noticeHTML(){ return `<div id="voiceNotice"></div>`; }
+function renderVoiceNotice(){
+  const el = $("#voiceNotice"); if (!el) return;
+  if (!TTS.loaded || TTS.available() || noticeDismissed) { el.innerHTML = ""; return; }
+  el.innerHTML = voiceProblemHTML(currentWord());
+}
+let noticeDismissed = false;
+function voiceProblemHTML(w){
+  const lk = w ? w.lk : null;
+  return `<div class="notice" role="status"><button class="x" data-act="dismissnotice" aria-label="關閉">×</button><b>這台裝置目前沒有可用的英語語音</b>，所以不會播放發音（避免用其他語言的聲音念英文）。
+  ${lk ? `可先到<a href="${lk.cam}" target="_blank" rel="noopener">劍橋詞典</a>或<a href="${lk.yh}" target="_blank" rel="noopener">Yahoo 奇摩字典</a>聽「${esc(w.w)}」的真人發音。` : ""}<br>
+  加裝英語語音：iPhone／iPad 到「設定 › 輔助使用 › 朗讀內容 › 聲音 › 英文」下載；Android 到「設定 › 文字轉語音輸出」安裝英文語音資料，然後重新開啟這個頁面。</div>`;
+}
+function showVoiceProblem(){
+  noticeDismissed = false;
+  const el = $("#voiceNotice");
+  if (el) { el.innerHTML = voiceProblemHTML(currentWord() || peekWord); el.scrollIntoView({ block:"nearest" }); }
+  else toast("這台裝置沒有可用的英語語音，請改用詞典連結聽發音。");
+}
+let peekWord = null;
+function currentWord(){
+  if (S.tab === "cards") { const i = curIndex(); return LIST[i] || null; }
+  if (S.tab === "today" && S.today && S.today.queue && S.today.queue.length) return BYID[S.today.queue[0]] || null;
+  if (S.tab === "quiz" && Q && Q.items && Q.items[Q.i]) return BYID[Q.items[Q.i].id];
+  return null;
+}
+
+/* ---- 單字卡 ---- */
+function renderCards(){
+  const n = LIST.length, i = curIndex();
+  const head = `${noticeHTML()}<div class="meta-row"><button class="pill" data-act="filter">${ICON.filter}<span>${esc(filterSummary(S.filter))}</span></button><div class="count">${n ? (i < n ? `第 <b>${i+1}</b>／${n}` : `已完成 ${n}／${n}`) : "0 字"}</div></div><div class="bar"><i style="width:${n ? Math.min(100, ((Math.min(i, n-1)+1)/n)*100) : 0}%"></i></div>`;
+  if (!n) {
+    main.innerHTML = head + `<div class="panel"><h2>沒有符合條件的單字</h2><p class="hint">目前的篩選條件找不到單字。可以放寬來源、詞性、主題或標記條件。</p><div class="stack"><button class="btn primary" data-act="filter">調整篩選</button><button class="btn ghost" data-act="resetfilter">顯示全部單字</button></div></div>`;
+    dock.hidden = true; renderVoiceNotice(); return;
+  }
+  if (i >= n) {
+    const k = LIST.filter(w => S.marks[w.id] === "k").length, r = LIST.filter(w => S.marks[w.id] === "r").length;
+    main.innerHTML = head + `<div class="panel"><div class="big-done">完成</div><h2>這一輪 ${n} 個單字都看完了</h2><p class="hint">${esc(filterSummary(S.filter))}</p>
+      <div class="stats"><div class="stat"><b>${n}</b><span>本輪單字</span></div><div class="stat"><b>${k}</b><span>已熟悉</span></div><div class="stat"><b>${r}</b><span>再複習</span></div></div>
+      <div class="stack"><button class="btn primary" data-act="restart">重新開始（回到第 1 個）</button>
+      ${r ? `<button class="btn rose" data-act="onlyreview">只複習「再複習」的 ${r} 個字</button>` : ""}
+      <button class="btn ghost" data-act="reshuffle">${S.filter.order === "rand" ? "重新洗牌再來一輪" : "改用隨機順序再來一輪"}</button>
+      <button class="btn ghost" data-act="prev">回到最後一個單字</button></div></div>`;
+    dock.hidden = true; renderVoiceNotice(); return;
+  }
+  const w = LIST[i];
+  main.innerHTML = head + cardHTML(w, { hideZh:S.settings.hideZh, revealed:view.revealed, allEx:view.allEx });
+  const mark = S.marks[w.id];
+  dock.innerHTML = `<div class="wrap">
+    <div class="dock-row">
+      <button class="btn rose" data-act="markr" aria-pressed="${mark === "r"}">${ICON.again}再複習</button>
+      <button class="btn ghost" data-act="togglezh" aria-pressed="${S.settings.hideZh}">${S.settings.hideZh ? ICON.eye + "顯示中文" : ICON.eyeoff + "隱藏中文"}</button>
+      <button class="btn sage" data-act="markk" aria-pressed="${mark === "k"}">${ICON.check}已熟悉</button>
+    </div>
+    <div class="dock-row">
+      <button class="btn soft big" data-act="prev" ${i === 0 ? "disabled" : ""}>${ICON.prev}上一個</button>
+      <button class="btn primary big" data-act="say" aria-label="播放發音">${ICON.play}發音</button>
+      <button class="btn soft big" data-act="next">下一個${ICON.next}</button>
+    </div></div>`;
+  dock.hidden = false; renderVoiceNotice();
+}
+function go(delta){
+  const n = LIST.length; let i = curIndex() + delta;
+  if (i < 0) i = 0; if (i > n) i = n;
+  TTS.stop(); view = { revealed:false, allEx:false };
+  setIndex(i); renderCards(); window.scrollTo(0, 0);
+  if (S.settings.autoplay && LIST[i]) speakWord(LIST[i]);
+}
+function toggleMark(id, m){
+  if (S.marks[id] === m) delete S.marks[id]; else S.marks[id] = m;
+  S.mt[id] = Date.now(); save();
+}
+
+/* ---- 今日複習（間隔重複） ---- */
+const INTERVALS = [1, 3, 7, 14, 30];
+function dueIds(d){ return Object.keys(S.srs).filter(id => BYID[id] && S.srs[id].due <= d).sort((a,b) => S.srs[a].due < S.srs[b].due ? -1 : 1); }
+function ensureToday(force){
+  const d = today();
+  if (!force && S.today && S.today.date === d) { S.today.queue = (S.today.queue || []).filter(id => BYID[id]); return; }
+  const due = dueIds(d);
+  const scope = listFor(S.filter, true).filter(w => !S.srs[w.id]).slice(0, S.settings.newPerDay).map(w => w.id);
+  S.today = { date:d, queue:[...due, ...scope.filter(id => !due.includes(id))], newIds:scope, dueCount:due.length, done:0, ok:0, again:0, revealed:false, started:false };
+  save();
+}
+function renderToday(){
+  ensureToday();
+  const T = S.today, d = today();
+  const tomorrow = Object.values(S.srs).filter(r => r.due === addDays(d, 1)).length;
+  const learned = Object.keys(S.srs).length;
+  if (!T.started) {
+    main.innerHTML = noticeHTML() + `<div class="meta-row"><button class="pill" data-act="filter">${ICON.filter}<span>新字來源：${esc(filterSummary(S.filter))}</span></button></div>
+    <div class="panel"><h2>今日複習</h2><p class="hint">依間隔重複安排：記得的字隔 1、3、7、14、30 天再出現；不記得的字今天會再出現一次。</p>
+    <div class="stats"><div class="stat"><b>${T.dueCount}</b><span>到期要複習</span></div><div class="stat"><b>${T.newIds.length}</b><span>今日新字</span></div><div class="stat"><b>${T.queue.length}</b><span>今日總數</span></div></div>
+    <div class="set-row"><div class="l">每天新字數量<small>改了之後可按「重新安排今日新字」</small></div><div class="seg" role="group" aria-label="每天新字數量">${[5,10,15,20,30].map(n => `<button data-act="newper" data-v="${n}" aria-pressed="${S.settings.newPerDay === n}">${n}</button>`).join("")}</div></div>
+    <div class="stack" style="margin-top:14px">${T.queue.length ? `<button class="btn primary big" data-act="startToday">開始今日複習（${T.queue.length} 字）</button>` : `<p class="hint">今天沒有到期的字，新字也都學過了。可以到篩選換一個來源，或明天再來。</p>`}
+    <button class="btn ghost" data-act="replanToday">重新安排今日新字（依目前篩選）</button></div>
+    <p class="hint" style="margin-top:12px">已排入複習的字：${learned} 個・明天到期：${tomorrow} 個</p></div>`;
+    dock.hidden = true; renderVoiceNotice(); return;
+  }
+  if (!T.queue.length) {
+    main.innerHTML = noticeHTML() + `<div class="panel"><div class="big-done">完成</div><h2>今天的複習都完成了</h2>
+    <div class="stats"><div class="stat"><b>${T.done}</b><span>完成次數</span></div><div class="stat"><b>${T.ok}</b><span>記得</span></div><div class="stat"><b>${T.again}</b><span>不記得</span></div></div>
+    <p class="hint">明天到期：${tomorrow} 個字。</p><div class="stack"><button class="btn primary" data-act="tab" data-v="cards">回到單字卡</button><button class="btn ghost" data-act="tab" data-v="quiz">做個小測驗</button></div></div>`;
+    dock.hidden = true; renderVoiceNotice(); return;
+  }
+  const w = BYID[T.queue[0]];
+  const rec = S.srs[w.id];
+  const label = !rec ? "新字" : rec.s === 0 ? "需要再記一次" : `第 ${rec.s} 次複習後`;
+  main.innerHTML = noticeHTML() + `<div class="meta-row"><span class="pill"><span>${label}</span></span><div class="count">剩 <b>${T.queue.length}</b> 字・已完成 ${T.done}</div></div><div class="bar"><i style="width:${Math.round(T.done/(T.done+T.queue.length)*100)}%"></i></div>` +
+    cardHTML(w, { hideZh:!T.revealed, revealed:false, allEx:view.allEx });
+  dock.innerHTML = `<div class="wrap">${T.revealed ? `<div class="dock-row" style="grid-template-columns:1fr 1fr 1fr"><button class="btn rose big" data-act="forgot">${ICON.again}不記得</button><button class="btn soft big" data-act="say">${ICON.play}發音</button><button class="btn sage big" data-act="remember">${ICON.check}記得</button></div>`
+    : `<div class="dock-row" style="grid-template-columns:1fr 2fr"><button class="btn soft big" data-act="say">${ICON.play}發音</button><button class="btn primary big" data-act="revealToday">顯示答案</button></div>`}</div>`;
+  dock.hidden = false; renderVoiceNotice();
+}
+function answerToday(ok){
+  const T = S.today, id = T.queue.shift(), d = today(), now = Date.now();
+  const r = S.srs[id] || { s:0, n:0, l:0 };
+  if (ok) { const s = r.s || 0; S.srs[id] = { s:Math.min(s + 1, 5), due:addDays(d, INTERVALS[Math.min(s, 4)]), n:(r.n||0) + 1, l:r.l||0, t:now }; T.ok++; }
+  else { S.srs[id] = { s:0, due:d, n:(r.n||0) + 1, l:(r.l||0) + 1, t:now }; T.queue.push(id); T.again++; }
+  T.done++; T.revealed = false; view = { revealed:false, allEx:false };
+  TTS.stop(); save(); renderToday(); window.scrollTo(0, 0);
+  if (S.settings.autoplay && T.queue.length) speakWord(BYID[T.queue[0]]);
+}
+
+/* ---- 小測驗 ---- */
+const QTYPES = [["en2zh","看英文選中文"],["au2zh","聽發音選中文"],["zh2en","看中文選英文"],["spellau","拼字（聽發音）"],["spellzh","拼字（看中文）"],["cloze","例句填空"],["mix","綜合"]];
+let Q = null;
+let QS = { type:"en2zh", count:10, scope:"filter" };
+function uniqSenses(w){
+  const out = [];
+  for (const s of w.s) {
+    const z = s.z.replace(/（[^）]*）/g, "");
+    if (out.some(o => o.p === s.p && (o.zz.includes(z) || z.includes(o.zz)))) { const o = out.find(o => o.p === s.p && z.includes(o.zz)); if (o && z.length > o.zz.length) { o.z = s.z; o.zz = z; } continue; }
+    out.push({ p:s.p, z:s.z, zz:z });
+  }
+  return out;
+}
+function shortZh(w){ const s = w.s[0]; let z = (s ? s.z : "").replace(/（[^）]*）/g, "").split("；").slice(0, 2).join("；"); return (s ? s.p + " " : "") + z; }
+function canSpell(w){ return /^[A-Za-z][A-Za-z' -]*[A-Za-z]$/.test(w.w) && !/\b(sb|sth)\b/.test(w.w); }
+function clozeFor(w){
+  if (!/^[A-Za-z-]+$/.test(w.w)) return null;
+  for (const e of (w.ex || [])) {
+    for (const f of (w.hl || [])) {
+      const re = new RegExp("(^|[^A-Za-z])(" + f.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")(?![A-Za-z])", "i");
+      const m = e.e.match(re);
+      if (m) { const idx = m.index + m[1].length; return { before:e.e.slice(0, idx), after:e.e.slice(idx + m[2].length), ans:m[2], zh:e.z }; }
+    }
+  }
+  return null;
+}
+function typeOk(t, w){
+  if (t === "au2zh" || t === "spellau") return TTS.available() && (t !== "spellau" || canSpell(w));
+  if (t === "spellzh") return canSpell(w);
+  if (t === "cloze") return !!clozeFor(w);
+  return true;
+}
+function distractors(w, n, pool, field){
+  const seen = new Set([field(w)]);
+  const same = shuffle(pool.filter(x => x.id !== w.id && x.pos.some(p => w.pos.includes(p))));
+  const rest = shuffle(pool.filter(x => x.id !== w.id));
+  const out = [];
+  for (const x of [...same, ...rest, ...shuffle(WORDS)]) { const v = field(x); if (x.id === w.id || seen.has(v)) continue; seen.add(v); out.push(x); if (out.length >= n) break; }
+  return out;
+}
+function startQuiz(ids){
+  let pool;
+  if (ids) pool = ids.map(id => BYID[id]).filter(Boolean);
+  else if (QS.scope === "review") pool = WORDS.filter(w => S.marks[w.id] === "r");
+  else pool = listFor(S.filter);
+  if (!pool.length) { toast(QS.scope === "review" ? "目前沒有標記「再複習」的字。" : "目前篩選沒有單字。"); return; }
+  let picks = shuffle(pool); if (!ids && QS.count !== "all") picks = picks.slice(0, QS.count);
+  const types = QS.type === "mix" ? ["en2zh","au2zh","zh2en","spellau","spellzh","cloze"] : [QS.type];
+  const items = [];
+  for (const w of picks) {
+    const ok = shuffle(types).filter(t => typeOk(t, w));
+    let t = ok[0] || "en2zh";
+    if (QS.type !== "mix" && !typeOk(QS.type, w)) t = (QS.type === "au2zh") ? "en2zh" : (QS.type === "spellau" ? (canSpell(w) ? "spellzh" : "en2zh") : (QS.type === "zh2en" ? "zh2en" : "en2zh"));
+    const item = { id:w.id, t };
+    if (t === "en2zh" || t === "au2zh") { const ds = distractors(w, 3, pool, shortZh); item.opts = shuffle([w, ...ds]).map(x => ({ id:x.id, label:shortZh(x) })); }
+    if (t === "zh2en" || t === "cloze") { const ds = distractors(w, 3, pool, x => x.w.toLowerCase()); item.opts = shuffle([w, ...ds]).map(x => ({ id:x.id, label:x.w })); }
+    if (t === "cloze") item.cz = clozeFor(w);
+    items.push(item);
+  }
+  const fellBack = QS.type !== "mix" && items.some(it => it.t !== QS.type);
+  Q = { items, i:0, score:0, wrong:[], answered:null, src:ids ? "retry" : QS.scope };
+  renderQuiz(); window.scrollTo(0, 0);
+  if (fellBack) toast((QS.type === "au2zh" || QS.type === "spellau") && !TTS.available() ? "沒有英語語音，聽力題改成看字作答。" : "有些字不適合這個題型，已改用其他題型。");
+  const it = Q.items[0]; if (it.t === "au2zh" || it.t === "spellau") setTimeout(() => speakWord(BYID[it.id]), 250);
+}
+function renderQuiz(){
+  if (!Q) {
+    const n = listFor(S.filter).length, r = WORDS.filter(w => S.marks[w.id] === "r").length;
+    main.innerHTML = noticeHTML() + `<div class="meta-row"><button class="pill" data-act="filter">${ICON.filter}<span>${esc(filterSummary(S.filter))}</span></button></div><div class="panel"><h2>小測驗</h2><p class="hint">答錯的字會自動標記為「再複習」。</p>
+    <div class="fgroup" style="margin-top:12px"><h4>題型</h4><div class="chips">${QTYPES.map(t => `<button class="chip" data-act="qtype" data-v="${t[0]}" aria-pressed="${QS.type === t[0]}">${t[1]}</button>`).join("")}</div></div>
+    <div class="fgroup"><h4>題數</h4><div class="chips">${[10,20,30,"all"].map(c => `<button class="chip" data-act="qcount" data-v="${c}" aria-pressed="${QS.count === c}">${c === "all" ? "全部" : c + " 題"}</button>`).join("")}</div></div>
+    <div class="fgroup"><h4>出題範圍</h4><div class="chips"><button class="chip" data-act="qscope" data-v="filter" aria-pressed="${QS.scope === "filter"}">目前篩選（${n} 字）</button><button class="chip" data-act="qscope" data-v="review" aria-pressed="${QS.scope === "review"}">只考「再複習」（${r} 字）</button></div></div>
+    <button class="btn primary big" style="width:100%" data-act="qstart">開始測驗</button></div>`;
+    dock.hidden = true; renderVoiceNotice(); return;
+  }
+  if (Q.i >= Q.items.length) {
+    const total = Q.items.length, pct = Math.round(Q.score / total * 100);
+    main.innerHTML = noticeHTML() + `<div class="panel"><div class="big-done">${pct}%</div><h2>答對 ${Q.score}／${total} 題</h2>
+    ${Q.wrong.length ? `<p class="hint">答錯的字已加入「再複習」。點一下可以看意思：</p><div class="wronglist">${Q.wrong.map(id => `<button class="wchip" data-act="peek" data-id="${id}">${esc(BYID[id].w)}</button>`).join("")}</div>` : `<p class="hint">全部答對！</p>`}
+    <div class="stack" style="margin-top:14px">${Q.wrong.length ? `<button class="btn rose big" data-act="qretry">只重測答錯的 ${Q.wrong.length} 個字</button>` : ""}<button class="btn primary" data-act="qagain">用同樣設定再測一次</button><button class="btn ghost" data-act="qsetup">回到測驗設定</button></div></div>`;
+    dock.hidden = true; renderVoiceNotice(); return;
+  }
+  const it = Q.items[Q.i], w = BYID[it.id], a = Q.answered;
+  let prompt = "", body = "";
+  const tname = (QTYPES.find(t => t[0] === it.t) || [,""])[1];
+  if (it.t === "en2zh") prompt = `<div class="word" lang="en">${esc(w.w)}</div><button class="btn soft" data-act="say" style="margin-top:8px">${ICON.play}播放發音</button>`;
+  if (it.t === "au2zh" || it.t === "spellau") prompt = `<button class="btn primary big" data-act="say" style="min-width:12em">${ICON.play}再聽一次</button><div class="seg" role="group" aria-label="語速" style="margin-top:10px"><button data-act="rate" data-v="0" aria-pressed="${!S.settings.slow}">正常</button><button data-act="rate" data-v="1" aria-pressed="${S.settings.slow}">慢速</button></div>`;
+  if (it.t === "zh2en" || it.t === "spellzh") prompt = `<div class="zhq">${uniqSenses(w).map(s => `<div><b class="en">${esc(s.p)}</b> ${esc(s.z)}</div>`).join("")}</div>`;
+  if (it.t === "cloze") prompt = `<div class="cloze">${esc(it.cz.before)}<span class="blank">${a ? esc(it.cz.ans) : "＿＿＿"}</span>${esc(it.cz.after)}</div>${it.cz.zh ? `<details class="fold" style="margin-top:8px;text-align:left"><summary>中文提示</summary><div class="hint">${esc(it.cz.zh)}</div></details>` : ""}<p class="hint" style="text-align:left">選出空格要填的單字（選項以原形顯示，空格可能是變化形）。</p>`;
+  if (it.opts) {
+    body = `<div class="opts">${it.opts.map((o, k) => { let cls = "opt" + (/[一-鿿]/.test(o.label) ? " zh" : " en"); if (a) { if (o.id === it.id) cls += " right"; else if (a.pick === o.id) cls += " wrong"; } return `<button class="${cls}" data-act="qpick" data-v="${o.id}" ${a ? "disabled" : ""}>${esc(o.label)}</button>`; }).join("")}</div>`;
+  } else {
+    body = `<form id="spellForm" autocomplete="off" style="margin-top:14px" class="stack"><input class="spell ${a ? (a.ok ? "right" : "wrong") : ""}" id="spellIn" type="text" inputmode="latin" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="拼出單字" placeholder="拼出這個單字" ${a ? `value="${esc(a.typed)}" disabled` : ""}><p class="hint" style="text-align:center">共 ${w.w.replace(/[^A-Za-z]/g, "").length} 個字母${it.hint ? `・開頭是「${esc(w.w[0])}」` : ""}</p>${a ? "" : `<div class="dock-row" style="grid-template-columns:1fr 2fr"><button type="button" class="btn ghost" data-act="qhint">提示開頭</button><button type="submit" class="btn primary">確認</button></div>`}</form>`;
+  }
+  const fb = a ? `<div class="fb ${a.ok ? "right" : "wrong"}" style="margin-top:14px">${a.ok ? "答對了！" : "答錯了，正確答案："}<div><span class="fw">${esc(w.w)}</span> <span class="ipa">${w.kk[0] ? "[" + esc(w.kk[0]) + "]" : ""}</span></div><div>${esc(shortZh(w))}</div>${a.ok ? "" : "<div>已加入「再複習」。</div>"}</div>` : "";
+  main.innerHTML = noticeHTML() + `<div class="panel"><div class="qhead"><span>${esc(tname)}</span><span>第 ${Q.i + 1}／${Q.items.length} 題・答對 ${Q.score}</span></div><div class="bar" style="margin-top:8px"><i style="width:${Q.i / Q.items.length * 100}%"></i></div><div class="qprompt">${prompt}</div>${body}${fb}</div>`;
+  if (a) { dock.innerHTML = `<div class="wrap"><div class="dock-row" style="grid-template-columns:1fr 1fr 2fr"><button class="btn ghost" data-act="peek" data-id="${w.id}">單字卡</button><button class="btn soft" data-act="say">${ICON.play}發音</button><button class="btn primary big" data-act="qnext">${Q.i + 1 < Q.items.length ? "下一題" : "看結果"}${ICON.next}</button></div></div>`; dock.hidden = false; }
+  else dock.hidden = true;
+  renderVoiceNotice();
+  const f = $("#spellForm"); if (f) { f.addEventListener("submit", e => { e.preventDefault(); checkSpell(); }); if (!a) setTimeout(() => { const el = $("#spellIn"); if (el) el.focus(); }, 50); }
+}
+function normSpell(s){ return s.toLowerCase().replace(/[’‘]/g, "'").replace(/\s+/g, " ").trim(); }
+function checkSpell(){
+  const it = Q.items[Q.i], w = BYID[it.id], typed = ($("#spellIn") || {}).value || "";
+  if (!typed.trim()) { toast("請先輸入單字。"); return; }
+  const ok = normSpell(typed) === normSpell(w.w);
+  answerQuiz(ok, { typed });
+}
+function answerQuiz(ok, extra){
+  const it = Q.items[Q.i], w = BYID[it.id];
+  Q.answered = Object.assign({ ok }, extra);
+  if (ok) Q.score++; else { if (!Q.wrong.includes(w.id)) Q.wrong.push(w.id); S.marks[w.id] = "r"; S.mt[w.id] = Date.now(); save(); }
+  renderQuiz();
+  if (it.t !== "en2zh") speakWord(w);
+}
+function nextQuiz(){
+  Q.i++; Q.answered = null; TTS.stop(); renderQuiz(); window.scrollTo(0, 0);
+  const it = Q.items[Q.i]; if (it && (it.t === "au2zh" || it.t === "spellau")) setTimeout(() => speakWord(BYID[it.id]), 200);
+}
+
+/* ================= sheets ================= */
+let sheetEl = null, draftF = null;
+function openSheet(title, bodyHTML, footHTML, onOpen){
+  closeSheet();
+  sheetEl = document.createElement("div"); sheetEl.className = "sheet-bg";
+  sheetEl.innerHTML = `<div class="sheet" role="dialog" aria-modal="true" aria-label="${esc(title)}"><div class="sheet-h"><h2>${esc(title)}</h2><button class="icon-btn" data-act="closesheet" aria-label="關閉">${ICON.close}</button></div><div class="sheet-b">${bodyHTML}</div>${footHTML ? `<div class="sheet-f">${footHTML}</div>` : ""}</div>`;
+  sheetEl.addEventListener("click", e => { if (e.target === sheetEl) closeSheet(); });
+  document.body.appendChild(sheetEl); document.body.style.overflow = "hidden";
+  if (onOpen) onOpen(sheetEl);
+}
+function closeSheet(){ if (sheetEl) { sheetEl.remove(); sheetEl = null; document.body.style.overflow = ""; } }
+
+function filterBody(f){
+  const cnt = listFor(f).length;
+  const srcBtn = (v, l) => `<button class="chip" data-act="f-src" data-v="${v}" aria-pressed="${f.src === v}">${l}</button>`;
+  const subs = (k, nums, lab) => `<div class="sub"><div class="hint" style="margin-bottom:6px">${lab}（不選＝全部）</div><div class="chips">${nums.map(n => `<button class="chip" data-act="f-sub" data-k="${k}" data-v="${n}" aria-pressed="${(f[k]||[]).includes(n)}">${k === "T" ? "L" + n : k === "M" ? "U" + n : "U" + String(n).padStart(2,"0")}</button>`).join("")}</div></div>`;
+  const nums = k => [...new Set(WORDS.flatMap(w => w.sc.filter(c => c[0] === k).map(c => Number(c.slice(1)))))].sort((a,b) => a - b);
+  let sub = "";
+  if (f.src === "T") sub = subs("T", nums("T"), "選擇課別");
+  if (f.src === "M") sub = `<div class="sub"><div class="hint" style="margin-bottom:6px">期數</div><div class="chips"><button class="chip" aria-pressed="true" disabled>2026 年 9 月號</button></div></div>` + subs("M", nums("M"), "選擇單元（期內文章）");
+  if (f.src === "C") sub = `<div class="sub"><div class="hint" style="margin-bottom:6px">級別</div><div class="chips"><button class="chip" aria-pressed="true" disabled>Level 3</button></div></div>` + subs("C", nums("C"), "選擇 Unit");
+  return `<div class="fgroup"><h4>單字來源</h4><div class="chips">${srcBtn("all","全部")}${srcBtn("T","課本")}${srcBtn("M","雜誌")}${srcBtn("C","核心單字")}${srcBtn("multi","多個來源都有")}</div>${sub}</div>
+  <div class="fgroup"><h4>詞性（可複選）</h4><div class="chips">${POSES.filter(p => WORDS.some(w => w.pos.includes(p[0]))).map(p => `<button class="chip" data-act="f-pos" data-v="${p[0]}" aria-pressed="${f.pos.includes(p[0])}">${p[1]}</button>`).join("")}</div></div>
+  <div class="fgroup"><h4>主題（可複選）</h4><div class="chips">${TOPICS.filter(t => WORDS.some(w => w.tp.includes(t))).map(t => `<button class="chip" data-act="f-topic" data-v="${t}" aria-pressed="${f.topics.includes(t)}">${t}</button>`).join("")}</div></div>
+  <div class="fgroup"><h4>標記</h4><div class="chips">${[["all","全部"],["r","只看再複習"],["k","只看已熟悉"],["none","尚未標記"]].map(m => `<button class="chip" data-act="f-mark" data-v="${m[0]}" aria-pressed="${f.mark === m[0]}">${m[1]}</button>`).join("")}</div></div>
+  <div class="fgroup"><h4>順序</h4><div class="chips"><button class="chip" data-act="f-order" data-v="orig" aria-pressed="${f.order === "orig"}">原始順序</button><button class="chip" data-act="f-order" data-v="rand" aria-pressed="${f.order === "rand"}">隨機順序</button>${f.order === "rand" ? `<button class="chip" data-act="f-shuffle">重新洗牌</button>` : ""}</div><p class="hint" style="margin-top:6px">每種篩選組合會各自記住看到第幾個字。</p></div>
+  <p class="hint" id="fcount">符合條件：<b>${cnt}</b> 個字</p>`;
+}
+function openFilter(){
+  draftF = JSON.parse(JSON.stringify(S.filter));
+  openSheet("篩選與順序", filterBody(draftF), `<button class="btn ghost" data-act="f-reset">重設</button><button class="btn primary" data-act="f-apply">套用</button>`);
+}
+function refreshFilterSheet(){ if (sheetEl) $(".sheet-b", sheetEl).innerHTML = filterBody(draftF); }
+
+function openSearch(){
+  openSheet("搜尋單字", `<input class="search-in" id="q" type="search" placeholder="輸入英文或中文，例如 remain、團結" aria-label="搜尋" autocomplete="off" autocapitalize="off" spellcheck="false"><ul class="results" id="qres"></ul>`, "", el => {
+    const inp = $("#q", el), res = $("#qres", el);
+    const run = () => {
+      const q = inp.value.trim().toLowerCase();
+      if (!q) { res.innerHTML = `<li class="hint">共有 ${WORDS.length} 個單字可以搜尋。</li>`; return; }
+      const isZh = /[㐀-鿿]/.test(q);
+      const scored = [];
+      for (const w of WORDS) {
+        let s = 0;
+        if (isZh) { if (w.s.some(x => x.z.includes(q))) s = 3; else if ((w.col||[]).some(c => c[1].includes(q))) s = 1; }
+        else { const lw = w.w.toLowerCase(); if (lw === q) s = 10; else if (lw.startsWith(q)) s = 7; else if ((w.hl||[]).some(f => f.toLowerCase() === q)) s = 6; else if (lw.includes(q)) s = 4; else if ((w.col||[]).some(c => c[0].toLowerCase().includes(q))) s = 1; }
+        if (s) scored.push([s, w]);
+      }
+      scored.sort((a,b) => b[0] - a[0]);
+      res.innerHTML = scored.length ? scored.slice(0, 60).map(([, w]) => `<li><button data-act="open" data-id="${w.id}"><span class="rw">${esc(w.w)}</span><span class="rz">${esc(w.s.map(s => s.p + " " + s.z).join("　"))}</span><span class="rz">${esc(w.src.map(s => s.short).join("・"))}</span></button></li>`).join("") : `<li class="hint">找不到「${esc(inp.value)}」。</li>`;
+    };
+    inp.addEventListener("input", run); run(); setTimeout(() => inp.focus(), 60);
+  });
+}
+function openDetail(id){
+  const w = BYID[id]; if (!w) return;
+  peekWord = w;
+  openSheet(w.w, cardHTML(w, { hideZh:false, allEx:true, openRel:true }), `<button class="btn soft" data-act="say" data-id="${w.id}">${ICON.play}發音</button><button class="btn primary" data-act="gotocard" data-id="${w.id}">在單字卡中前往</button>`);
+}
+function openPeek(id){
+  const w = BYID[id]; if (!w) return;
+  peekWord = w;
+  openSheet("快速查看", `<div class="word" lang="en" style="font-size:2.2rem">${esc(w.w)}</div>${w.kk[0] ? `<div class="phon"><span class="ipa">[${esc(w.kk[0])}]</span></div>` : ""}<ul class="senses" style="margin-top:10px">${w.s.map(s => `<li><span class="p">${esc(s.p)}</span><span class="z">${esc(s.z)}</span></li>`).join("")}</ul>${w.ex[0] ? `<div class="ex" style="margin-top:12px"><div class="e">${hlSentence(w.ex[0].e, w.hl)}</div><div class="z">${esc(w.ex[0].z)}</div></div>` : ""}<div class="srcs" style="margin-top:12px">${w.src.map(s => `<span class="src" data-k="${s.k}">${esc(s.short)}</span>`).join("")}</div>`,
+    `<button class="btn soft" data-act="say" data-id="${w.id}">${ICON.play}發音</button><button class="btn primary" data-act="open" data-id="${w.id}">完整卡片</button>`);
+}
+function gotoCard(id){
+  closeSheet();
+  let idx = LIST.findIndex(w => w.id === id);
+  if (idx < 0) { S.filter = Object.assign({}, DEFAULT_FILTER, { order:S.filter.order, seed:S.filter.seed }); rebuildList(); idx = LIST.findIndex(w => w.id === id); }
+  S.tab = "cards"; document.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-selected", String(b.dataset.tab === "cards")));
+  view = { revealed:false, allEx:false }; setIndex(Math.max(idx, 0)); renderCards(); window.scrollTo(0, 0);
+}
+
+function settingsBody(){
+  const us = TTS.forAccent("en-US"), gb = TTS.forAccent("en-GB");
+  const vsel = (list, cur, key) => list.length ? `<select id="sel-${key}" data-act="voice" data-k="${key}" aria-label="選擇語音"><option value="">自動選擇</option>${list.map(v => `<option value="${esc(v.voiceURI)}" ${v.voiceURI === cur ? "selected" : ""}>${esc(v.name)}（${esc(v.lang)}）</option>`).join("")}</select>` : `<span class="hint">這台裝置沒有${key === "voiceGB" ? "英式" : "美式"}語音</span>`;
+  const seg = (act, opts, cur) => `<div class="seg" role="group">${opts.map(o => `<button data-act="${act}" data-v="${o[0]}" aria-pressed="${String(cur) === String(o[0])}">${o[1]}</button>`).join("")}</div>`;
+  const sync = Cloud.status === "cloud" ? "已同步到你的 Claude 帳號，換裝置打開這個頁面也能接著用。" : Cloud.status === "error" ? "雲端同步暫時失敗，進度仍保存在這台裝置。" : "進度只保存在這台裝置上（離線版不會同步到 Claude 帳號），請定期用下方「複製進度」備份。";
+  const learned = Object.keys(S.srs).length, rr = Object.values(S.marks).filter(m => m === "r").length, kk = Object.values(S.marks).filter(m => m === "k").length;
+  const bySrc = k => WORDS.filter(w => w.sk.includes(k)).length;
+  return `<div class="set-row"><div class="l">發音口音</div>${seg("accent", [["en-US","美式"],["en-GB","英式"]], S.settings.accent)}</div>
+  <div class="set-row"><div class="l">美式語音</div>${vsel(us, S.settings.voiceUS, "voiceUS")}</div>
+  <div class="set-row"><div class="l">英式語音</div>${vsel(gb, S.settings.voiceGB, "voiceGB")}</div>
+  <div class="set-row"><div class="l">語速</div>${seg("rate", [[0,"正常"],[1,"慢速"]], S.settings.slow ? 1 : 0)}</div>
+  <div class="set-row"><div class="l">試聽<small>${TTS.available() ? `可用英語語音 ${TTS.english().length} 個` : (TTS.loaded ? "沒有偵測到英語語音" : "正在偵測語音…")}</small></div><button class="btn soft" data-act="testvoice">${ICON.play}Hello, how are you?</button></div>
+  <div class="set-row"><div class="l">換字時自動播放發音</div>${seg("autoplay", [[0,"關"],[1,"開"]], S.settings.autoplay ? 1 : 0)}</div>
+  <div class="set-row"><div class="l">音標</div>${seg("ipa", [[1,"KK＋IPA"],[0,"只顯示 KK"]], S.settings.showIPA ? 1 : 0)}</div>
+  <div class="set-row"><div class="l">外觀</div>${seg("theme", [["system","跟隨系統"],["light","淺色"],["dark","深色"]], S.settings.theme)}</div>
+  <div class="set-row"><div class="l">進度保存<small>${sync}</small></div></div>
+  <div class="set-row"><div class="l">離線使用<small>${window.__offlineStatus ? window.__offlineStatus() : ""}</small></div></div>
+  <div class="set-row"><div class="l">學習統計<small>排入間隔複習 ${learned} 字・已熟悉 ${kk} 字・再複習 ${rr} 字</small></div></div>
+  <div class="set-row"><div class="l">備份進度<small>複製一段文字，存在記事本裡；需要時貼回來還原。</small></div><button class="btn soft" data-act="export">複製進度</button></div>
+  <div class="set-row" style="display:block"><div class="l" style="margin-bottom:8px">還原進度</div><textarea id="importBox" placeholder="把先前複製的進度文字貼在這裡"></textarea><button class="btn ghost" style="margin-top:8px" data-act="import">從上面的文字還原</button></div>
+  <div class="set-row"><div class="l">清除所有進度<small>標記、複習排程、位置都會清掉，設定保留。</small></div><button class="btn rose" data-act="wipe">清除…</button></div>
+  <div class="set-row" id="wipeConfirm" hidden><div class="l">確定要清除嗎？這個動作無法復原。</div><button class="btn ghost" data-act="wipeno">取消</button><button class="btn rose" data-act="wipeyes">確定清除</button></div>
+  <div class="set-row"><div class="l">單字資料<small>共 ${WORDS.length} 字（課本 ${bySrc("T")}・雜誌 ${bySrc("M")}・核心 ${bySrc("C")}，多來源 ${WORDS.filter(w => w.sk.length > 1).length}）・資料版本 ${esc(DATA.version)}</small></div></div>`;
+}
+function openSettings(){ openSheet("設定", settingsBody(), ""); }
+function refreshSettings(){ if (sheetEl && $(".sheet-h h2", sheetEl).textContent === "設定") { const b = $(".sheet-b", sheetEl), y = b.scrollTop; b.innerHTML = settingsBody(); b.scrollTop = y; } }
+
+function applyTheme(){
+  const t = S.settings.theme;
+  if (t === "system") document.documentElement.removeAttribute("data-theme"); else document.documentElement.setAttribute("data-theme", t);
+  const m = document.querySelector('meta[name="theme-color"]'); if (m) m.content = getComputedStyle(document.body).backgroundColor || "#EEF1F4";
+}
+let toastT = null;
+function toast(msg){
+  let t = $("#toast"); if (!t) { t = document.createElement("div"); t.id = "toast"; t.className = "toast"; t.setAttribute("role", "status"); document.body.appendChild(t); }
+  t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => { t.hidden = true; }, 2600);
+}
+
+/* ================= events ================= */
+document.addEventListener("click", async e => {
+  const b = e.target.closest("[data-act]"); if (!b) return;
+  const act = b.dataset.act, v = b.dataset.v;
+  const cw = () => (b.dataset.id ? BYID[b.dataset.id] : null) || (sheetEl && peekWord && sheetEl.contains(b) ? peekWord : null) || currentWord();
+  switch (act) {
+    case "tab": setTab(v); break;
+    case "say": { const w = cw(); if (w) speakWord(w); break; }
+    case "sayex": { const w = cw(); if (w) speakExample(w); break; }
+    case "rate": S.settings.slow = v === "1"; save(); document.querySelectorAll('[data-act="rate"]').forEach(x => x.setAttribute("aria-pressed", String((x.dataset.v === "1") === S.settings.slow))); break;
+    case "reveal": if (S.tab === "today" && S.today) { S.today.revealed = true; save(); renderToday(); } else { view.revealed = true; renderCards(); } break;
+    case "allex": if (sheetEl && sheetEl.contains(b)) break; view.allEx = true; rerender(); break;
+    case "prev": go(-1); break;
+    case "next": go(1); break;
+    case "markr": case "markk": { const w = currentWord(); if (!w) break; toggleMark(w.id, act === "markr" ? "r" : "k"); const now = S.marks[w.id]; toast(now ? (now === "r" ? "已標記「再複習」" : "已標記「已熟悉」") : "已取消標記"); renderCards(); break; }
+    case "togglezh": S.settings.hideZh = !S.settings.hideZh; view.revealed = false; save(); renderCards(); break;
+    case "restart": setIndex(0); view = { revealed:false, allEx:false }; renderCards(); window.scrollTo(0,0); break;
+    case "onlyreview": S.filter.mark = "r"; rebuildList(); setIndex(0); renderCards(); window.scrollTo(0,0); break;
+    case "reshuffle": S.filter.order = "rand"; S.filter.seed = Math.floor(Math.random() * 1e9); rebuildList(); setIndex(0); renderCards(); window.scrollTo(0,0); break;
+    case "resetfilter": S.filter = { ...DEFAULT_FILTER }; save(); rerender(); break;
+    case "filter": openFilter(); break;
+    case "closesheet": closeSheet(); break;
+    case "dismissnotice": noticeDismissed = true; renderVoiceNotice(); break;
+    case "f-src": draftF.src = v; refreshFilterSheet(); break;
+    case "f-sub": { const k = b.dataset.k, n = Number(v); const a = draftF[k] || (draftF[k] = []); const i = a.indexOf(n); i >= 0 ? a.splice(i, 1) : a.push(n); a.sort((x,y) => x - y); refreshFilterSheet(); break; }
+    case "f-pos": { const a = draftF.pos, i = a.indexOf(v); i >= 0 ? a.splice(i, 1) : a.push(v); refreshFilterSheet(); break; }
+    case "f-topic": { const a = draftF.topics, i = a.indexOf(v); i >= 0 ? a.splice(i, 1) : a.push(v); refreshFilterSheet(); break; }
+    case "f-mark": draftF.mark = v; refreshFilterSheet(); break;
+    case "f-order": draftF.order = v; if (v === "rand" && !draftF.seed) draftF.seed = Math.floor(Math.random() * 1e9); refreshFilterSheet(); break;
+    case "f-shuffle": draftF.seed = Math.floor(Math.random() * 1e9); refreshFilterSheet(); toast("已重新洗牌"); break;
+    case "f-reset": draftF = JSON.parse(JSON.stringify(DEFAULT_FILTER)); refreshFilterSheet(); break;
+    case "f-apply": S.filter = draftF; save(); closeSheet(); view = { revealed:false, allEx:false }; TTS.stop(); rerender(); window.scrollTo(0,0); break;
+    case "open": openDetail(b.dataset.id); break;
+    case "peek": openPeek(b.dataset.id); break;
+    case "gotocard": gotoCard(b.dataset.id); break;
+    case "startToday": S.today.started = true; save(); renderToday(); window.scrollTo(0,0); if (S.settings.autoplay && S.today.queue.length) speakWord(BYID[S.today.queue[0]]); break;
+    case "replanToday": { const st = S.today; ensureToday(true); if (st && st.started) { S.today.started = false; } save(); renderToday(); toast("已依目前篩選重新安排"); break; }
+    case "newper": S.settings.newPerDay = Number(v); save(); renderToday(); break;
+    case "revealToday": S.today.revealed = true; save(); renderToday(); break;
+    case "remember": answerToday(true); break;
+    case "forgot": answerToday(false); break;
+    case "qtype": QS.type = v; renderQuiz(); break;
+    case "qcount": QS.count = v === "all" ? "all" : Number(v); renderQuiz(); break;
+    case "qscope": QS.scope = v; renderQuiz(); break;
+    case "qstart": startQuiz(); break;
+    case "qpick": { const it = Q.items[Q.i]; answerQuiz(v === it.id, { pick:v }); break; }
+    case "qhint": Q.items[Q.i].hint = true; renderQuiz(); break;
+    case "qnext": nextQuiz(); break;
+    case "qretry": startQuiz(Q.wrong.slice()); break;
+    case "qagain": startQuiz(Q.src === "retry" ? Q.items.map(x => x.id) : null); break;
+    case "qsetup": Q = null; renderQuiz(); break;
+    case "accent": S.settings.accent = v; TTS._warned = false; save(); refreshSettings(); break;
+    case "autoplay": S.settings.autoplay = v === "1"; save(); refreshSettings(); break;
+    case "ipa": S.settings.showIPA = v === "1"; save(); refreshSettings(); rerender(); break;
+    case "theme": S.settings.theme = v; save(); applyTheme(); refreshSettings(); break;
+    case "testvoice": TTS.speak("Hello, how are you?"); break;
+    case "export": { const txt = JSON.stringify(S); try { await navigator.clipboard.writeText(txt); toast("已複製進度，請貼到記事本保存。"); } catch (err) { const box = $("#importBox"); if (box) { box.value = txt; box.select(); } toast("無法自動複製，已把進度放進下方文字框，請手動複製。"); } break; }
+    case "import": { const box = $("#importBox"); try { const o = JSON.parse(box.value); if (!o || o.v !== 1) throw 0; S = mergeStates(S, normalizeState(o)); save(); applyTheme(); refreshSettings(); rerender(); toast("已還原進度"); } catch (err) { toast("這段文字不是有效的進度資料。"); } break; }
+    case "wipe": { const c = $("#wipeConfirm"); if (c) c.hidden = false; break; }
+    case "wipeno": { const c = $("#wipeConfirm"); if (c) c.hidden = true; break; }
+    case "wipeyes": { const keep = S.settings; S = normalizeState({ settings:keep, wipedAt:Date.now() }); save(); refreshSettings(); rerender(); toast("已清除進度"); break; }
+  }
+});
+document.addEventListener("change", e => {
+  const t = e.target;
+  if (t.dataset && t.dataset.act === "voice") { S.settings[t.dataset.k] = t.value; save(); TTS.speak("Hello"); }
+});
+$("#btnSearch").addEventListener("click", openSearch);
+$("#btnFilter").addEventListener("click", openFilter);
+$("#btnSettings").addEventListener("click", openSettings);
+document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => setTab(b.dataset.tab)));
+document.addEventListener("keydown", e => {
+  if (sheetEl) { if (e.key === "Escape") closeSheet(); return; }
+  if (e.target.matches("input,textarea,select")) return;
+  if (S.tab === "cards") { if (e.key === "ArrowRight") go(1); else if (e.key === "ArrowLeft") go(-1); else if (e.key === " ") { e.preventDefault(); const w = currentWord(); if (w) speakWord(w); } }
+});
+window.addEventListener("pagehide", () => TTS.stop());
+
+/* ================= boot ================= */
+(async function boot(){
+  S = normalizeState(loadLocal());
+  applyTheme();
+  document.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-selected", String(b.dataset.tab === S.tab)));
+  TTS.init();
+  try {
+    const r = await fetch("words.json", { cache:"no-cache" });
+    if (!r.ok) throw new Error(r.status);
+    DATA = await r.json();
+  } catch (err) {
+    $("#loading").textContent = "無法載入單字資料（words.json）。請確認網路連線後重新整理頁面。"; return;
+  }
+  WORDS = DATA.words; BYID = {}; MORPH = {};
+  for (const w of WORDS) { BYID[w.id] = w; for (const m of (w.mo || [])) (MORPH[morphKey(m)] ||= []).push(w.id); }
+  rerender();
+  Cloud.init();
+})();
+</script>
+<script>
+(function(){
+  var loadedAt = Date.now(), hadController = !!(navigator.serviceWorker && navigator.serviceWorker.controller);
+  window.__offlineStatus = function(){
+    if (!('serviceWorker' in navigator)) return '這個瀏覽器不支援離線使用。';
+    return navigator.serviceWorker.controller ? '已下載到這台裝置，沒有網路也能開啟（發音使用裝置內建的英語語音；詞典連結需要網路）。' : '尚未完成離線下載：請在有網路時開啟一次，等幾秒後關掉再重新開啟。';
+  };
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function(){ navigator.serviceWorker.register('sw.js').catch(function(){}); });
+    navigator.serviceWorker.addEventListener('controllerchange', function(){
+      if (!hadController) { hadController = true; return; }
+      if (Date.now() - loadedAt < 6000) location.reload();
+      else if (typeof toast === 'function') toast('已下載新版本，下次開啟就會套用。');
+    });
+  }
+  try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist(); } catch (e) {}
+})();
+</script>
+</body>
+</html>
